@@ -1,4 +1,5 @@
 # Deep Learning 概念整理
+
 花书中文版[深度学习](https://github.com/exacity/deeplearningbook-chinese)
 原书[Deep Learning](http://www.deeplearningbook.org/)
 
@@ -6,7 +7,7 @@
 
 欢迎进行章节认领～～ ^_^
 
-| 章节 | 整理人 | 进度 | 
+| 章节 | 整理人 | 进度 |
 | ------------ | ------------ | ------------ |
 | [第一章 前言](ch01.md) | ||
 | [第二章 线性代数](ch02.md) | lpt | 1 |
