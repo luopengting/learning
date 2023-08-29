@@ -17,7 +17,7 @@ find_package(CUDAToolkit)
 ```
 
 ## CUDA_STANDARD is set to invalid value '17'
-When we use `set(CMAKE_CUDA_STANDARD 17)` in CMakeLists and error occurs:
+When `set(CMAKE_CUDA_STANDARD 17)` in CMakeLists and error occurs:
 ```
 CUDA_STANDARD is set to invalid value '17'
 ```
