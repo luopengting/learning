@@ -1,0 +1,21 @@
+## libstdc++.so.6: version `GLIBCXX_3.4.30' not found
+```
+Traceback (most recent call last):
+  File "demo.py", line 92, in <module>
+    pred_traj = run(cfg, args.network, args.imagedir, args.calib, args.stride, args.skip, args.viz, args.timeit, args.save_reconstruction)
+  File "/home/postd/anaconda3/envs/persformer_dpvo/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "demo.py", line 45, in run
+    slam = DPVO(cfg, network, ht=image.shape[1], wd=image.shape[2], viz=viz)
+  File "/home/postd/data/luopengting/workspace/papers/DPVO/dpvo/dpvo.py", line 87, in __init__
+    self.start_viewer()
+  File "/home/postd/data/luopengting/workspace/papers/DPVO/dpvo/dpvo.py", line 118, in start_viewer
+    from dpviewer import Viewer
+  File "/home/postd/anaconda3/envs/persformer_dpvo/lib/python3.8/site-packages/dpviewer/__init__.py", line 1, in <module>
+    from dpviewerx import Viewer
+ImportError: /home/postd/anaconda3/envs/persformer_dpvo/bin/../lib/libstdc++.so.6: version `GLIBCXX_3.4.30' not found (required by /usr/local/lib/libpango_core.so)
+```
+### solution
+```
+conda install -c conda-forge libstdcxx-ng=12
+```
